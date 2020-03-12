@@ -3,3 +3,69 @@
     padding: 0;
     margin: 0;
 }
+
+
+
+body {
+    font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+    font-size: 0.8125rem;
+}
+
+/* top nav styling */
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 12vh;
+    border: solid aliceblue;
+}
+
+.navigation-first {
+    display: flex;
+    justify-content: space-between;
+    background-color: #131313;
+    height: 20%;
+    align-items: center;
+}
+
+.navigation-first a {
+    color: white;
+    text-decoration: none;
+    padding: 0.6em;
+    font-size: 0.7rem;
+}
+
+.navigation-second {
+
+    display: flex;
+    height: 50%;
+    border: solid green;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-third {
+
+}
+
+.navigation-first-right {
+
+    margin-right: 1.5em;
+}
+
+.navigation-first-left {
+
+    margin-left: 1.5em;
+    /*! padding: 0 0em; */
+}
+
+.navigation-second-links {
+
+    margin-left: 1.5em;
+}
+
+.navigation-second-icons {
+
+    display: flex;
+    margin-right: 1.5em;
+}
