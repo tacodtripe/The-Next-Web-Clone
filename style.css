@@ -15,7 +15,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* --------------------top nav styling----------------- */
@@ -127,68 +127,133 @@ header {
 /* ----------------Styling-the-main-section------------ */
 
 .main-tiles {
-    display: flex;
-    width: 100%;
-    height: fit-content;
+  display: flex;
+  width: 100%;
+  height: fit-content;
 }
 
 .main-tiles-first-tile {
-    width: 67%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2.5vh 2vw;
-    background: red;
+  width: 67%;
+  height: 55vh;
+  margin-right: 1rem;
+  background-image: url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F03%2Fheader-image-entry-level-AirPods-Pro-Lite-FINAL.png&signature=40bd8b658a58cdd448cc9efcb8b027eb);
+  display: block;
+  position: relative;
+  z-index: -1;
+}
+
+.first-tile-gradient-red {
+  position: absolute;
+  background: rgba(234, 171, 171, 0.36) url(images/cover-gradient-red.png) no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.cover-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.9vh 0.9vw;
+
+  /*! align-items: center; */
+  height: 100%;
+  width: 100%;
+}
+
+.main-tiles-first-cover-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tnw-cover-logo {
+  width: 25%;
 }
 
 .first-tile-date {
-    align-self: flex-end;
-    justify-self: flex-start;
-    color: rgb(255, 255, 255);
-    font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
 }
 
 .main-tiles-title {
-font-size: 4rem;
-letter-spacing: -0.015em;
-font-weight: 700;
-line-height: 1em;
-color: white;
+  font-size: 4rem;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+  line-height: 1em;
+  color: white;
 }
 
 .main-tiles-info {
-    font-size: 0.929rem;
-    line-height: 1.231em;
-    letter-spacing: normal;
-    font-weight: 400;
-    color: rgb(170, 170, 170);
+  font-size: 0.929rem;
+  line-height: 1.231em;
+  letter-spacing: normal;
+  font-weight: 400;
+  color: rgb(170, 170, 170);
 }
 
 .main-tiles-info > a {
-    font-size: 0.929rem;
-    line-height: 1.231em;
-    letter-spacing: normal;
-    font-weight: 400;
-    color: rgb(170, 170, 170);
+  font-size: 0.929rem;
+  line-height: 1.231em;
+  letter-spacing: normal;
+  font-weight: 400;
+  color: rgb(170, 170, 170);
 }
 
-.main-tiles-second-tile-container{
-    width: 30%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
+.main-tiles-second-tile-container {
+  width: 32%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-tiles-second-tile {
-    width: 100%;
-    height: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw 1vh;
+  justify-content: flex-end;
 }
 
 .main-tiles-second-title {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -0.015;
-    line-height: 1.1em;
-    color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.015;
+  line-height: 1.1em;
+  color: white;
+}
+
+.main-second-tile-top-background {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg);
+  height: 50%;
+  z-index: -1;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.second-tile-gradient {
+  background: rgba(0, 0, 0, 0.25) url(images/image-gradient.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+}
+
+.main-second-tile-bottom-background {
+  margin-top: 1rem;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Tesla-model-s-range-390-miles-improve-battery-tech-drive-model-x-musk-twitter-tweet-796x448.jpg);
+  height: 50%;
+  z-index: -1;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+  display: block;
 }
