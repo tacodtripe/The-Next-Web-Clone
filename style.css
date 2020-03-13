@@ -14,8 +14,11 @@ body {
   font-size: 0.8125rem;
 }
 
+a {
+    text-decoration: none;
+}
 
-/* -------------top nav styling----------------- */
+/* --------------------top nav styling----------------- */
 
 header {
   display: flex;
@@ -119,4 +122,73 @@ header {
 
 .navigation-first-left {
   margin-left: 1.5em;
+}
+
+/* ----------------Styling-the-main-section------------ */
+
+.main-tiles {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.main-tiles-first-tile {
+    width: 67%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5vh 2vw;
+    background: red;
+}
+
+.first-tile-date {
+    align-self: flex-end;
+    justify-self: flex-start;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+.main-tiles-title {
+font-size: 4rem;
+letter-spacing: -0.015em;
+font-weight: 700;
+line-height: 1em;
+color: white;
+}
+
+.main-tiles-info {
+    font-size: 0.929rem;
+    line-height: 1.231em;
+    letter-spacing: normal;
+    font-weight: 400;
+    color: rgb(170, 170, 170);
+}
+
+.main-tiles-info > a {
+    font-size: 0.929rem;
+    line-height: 1.231em;
+    letter-spacing: normal;
+    font-weight: 400;
+    color: rgb(170, 170, 170);
+}
+
+.main-tiles-second-tile-container{
+    width: 30%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-tiles-second-tile {
+    width: 100%;
+    height: 50%;
+}
+
+.main-tiles-second-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.015;
+    line-height: 1.1em;
+    color: white;
 }
