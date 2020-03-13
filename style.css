@@ -1,71 +1,122 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-
+html {
+  padding: 0;
+  margin: 0;
+}
 
 body {
-    font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
-    font-size: 0.8125rem;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  font-size: 0.8125rem;
 }
 
-/* top nav styling */
+
+/* -------------top nav styling----------------- */
 
 header {
-    display: flex;
-    flex-direction: column;
-    height: 12vh;
-    border: solid aliceblue;
+  display: flex;
+  flex-direction: column;
+  height: 12vh;
 }
 
 .navigation-first {
-    display: flex;
-    justify-content: space-between;
-    background-color: #131313;
-    height: 20%;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #131313;
+  height: 25%;
+  align-items: center;
 }
 
 .navigation-first a {
-    color: white;
-    text-decoration: none;
-    padding: 0.6em;
-    font-size: 0.7rem;
+  color: white;
+  text-decoration: none;
+  padding: 0.6em;
+  font-size: 0.7rem;
+}
+
+.navigation-top-middle {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navigation-logo {
+  height: 100%;
+  width: 5%;
+  background-color: red;
+}
+
+.top-nav-tnw-logo {
+  object-fit: cover;
+  padding-bottom: auto;
+  padding-top: 14%;
 }
 
 .navigation-second {
-
-    display: flex;
-    height: 50%;
-    border: solid green;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
 }
 
-.navigation-third {
-
-}
-
-.navigation-first-right {
-
-    margin-right: 1.5em;
-}
-
-.navigation-first-left {
-
-    margin-left: 1.5em;
-    /*! padding: 0 0em; */
-}
-
-.navigation-second-links {
-
-    margin-left: 1.5em;
+.nav-second-anchor {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 1.56px;
+  padding-left: 1rem;
 }
 
 .navigation-second-icons {
+  height: 100%;
 
-    display: flex;
-    margin-right: 1.5em;
+  /* width: 5rem; */
+  display: flex;
+  margin-right: 0;
+  width: 7%;
+}
+
+.nav-icon {
+  height: 100%;
+  width: 50%;
+  border-left: 0.3px solid rgb(228, 228, 228);
+}
+
+.nav-icon-i {
+  font-size: 1.2rem;
+  color: rgb(218, 218, 218);
+  padding: 1.2rem;
+  font-weight: 900;
+}
+
+.navigation-third {
+  background-color: yellow;
+  height: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-third-anchor {
+  color: #131313;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 501;
+  width: 95%;
+  margin-left: 5%;
+  padding-left: 1rem;
+}
+
+.navigation-first-right {
+  margin-right: 1.5em;
+}
+
+.navigation-first-left {
+  margin-left: 1.5em;
 }
