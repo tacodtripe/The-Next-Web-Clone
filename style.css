@@ -18,6 +18,18 @@ a {
   text-decoration: none;
 }
 
+.flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.general-container {
+
+  width: 65%;
+  margin: 0 auto;
+}
+
 /* --------------------top nav styling----------------- */
 
 header {
@@ -285,6 +297,7 @@ letter-spacing: -0.015em;
   text-decoration: none;
 }
 
+
 .latest-news-items-container {
 
   width: 65%;
@@ -328,4 +341,126 @@ letter-spacing: -0.015em;
 .latest-news-item-h4-a {
 
   color: rgb(170, 170, 170);
+}
+
+.funding {
+
+}
+
+.funding-header {
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.funding-navbar {
+
+}
+
+.funding-navbar-a {
+
+  color: #f42;
+  font-size: 0.9rem;
+  border-right: solid 1px #f42;
+  padding: 0 0.6em;
+}
+
+.last-nav-item {
+  border: none ;
+}
+
+.funding-thumbnail-container {
+
+  display: flex;
+  /*! width: 100%; */
+  margin: 2em 0.2em;
+}
+
+.funding-thumbnail {
+
+  padding: 1em;
+  background-image: linear-gradient(#f42 17%,#eeccc6 17%,#eeccc6 31.2%,#fff 17%,#f2f2f2 70%);
+  margin-left: 2em;
+  width: 100%;
+}
+
+.funding-thumbnail-head {
+
+  display: flex;
+}
+
+.funding-thumbnail-head-right {
+  
+  width: 69.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1em;
+}
+
+.funding-thumbnail-head-right-bottom {
+  
+}
+
+.funding-thumbnail-head-img {
+
+  width: 30.5%;
+  padding: 2%;
+  position: relative;
+  bottom: 0.5em;
+  left: -0.4em;
+}
+
+.funding-thumbnail-company {
+
+  color: white;
+  font-size: 1.286rem;
+  font-weight: 700;
+}
+
+.funding-thumbnail-price {
+
+  font-size: 1.286rem;
+  font-weight: 700;
+}
+
+.funding-thumbnail-source {
+
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+
+.funding-thumbnail-middle {
+
+  padding: 2em 0;
+}
+
+.funding-thumbnail-middle-p {
+
+  padding: 0.2em;
+  font-size: 0.7rem;
+  opacity: 0.7;
+  font-weight: 300;
+}
+
+.fa-tag,
+.fa-briefcase {
+
+  font-size: 0.8rem;
+  padding-right: 0.3rem;
+}
+
+.funding-thumbnail-bottom {
+
+  padding: 2em 0;
+  font-size: 0.7rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.funding-thumbnail-bottom-text {
+
+  color: black;
+  opacity: 0.7;
 }
