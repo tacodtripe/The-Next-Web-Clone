@@ -352,6 +352,7 @@ letter-spacing: -0.015em;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .funding-navbar {
@@ -380,7 +381,7 @@ letter-spacing: -0.015em;
 .funding-thumbnail {
 
   padding: 1em;
-  background-image: linear-gradient(#f42 17%,#eeccc6 17%,#eeccc6 31.2%,#fff 17%,#f2f2f2 70%);
+  background-image: linear-gradient(#f42 17.7%,#eeccc6 17.7%,#eeccc6 40%,#fff 40%,#f2f2f2 70%);
   margin-left: 2em;
   width: 100%;
 }
@@ -433,7 +434,8 @@ letter-spacing: -0.015em;
 
 .funding-thumbnail-middle {
 
-  padding: 2em 0;
+  padding: 1em 0;
+  border-bottom: solid 0.5px #f7c4ab;
 }
 
 .funding-thumbnail-middle-p {
@@ -453,7 +455,7 @@ letter-spacing: -0.015em;
 
 .funding-thumbnail-bottom {
 
-  padding: 2em 0;
+  padding: 1em 0;
   font-size: 0.7rem;
   opacity: 0.9;
   font-weight: 300;
