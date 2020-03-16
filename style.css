@@ -25,7 +25,6 @@ a {
 }
 
 .general-container {
-
   width: 65%;
   margin: 0 auto;
 }
@@ -249,7 +248,7 @@ header {
 }
 
 .second-tile-gradient {
-  background: rgba(0, 0, 0, 0.25) url(images/image-gradient.png) no-repeat;
+  background: rgba(0, 0, 0, 0.1) url(images/image-gradient.png) no-repeat;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -274,7 +273,6 @@ header {
 /* styling the latest news */
 
 .latest-news {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -282,24 +280,24 @@ header {
 }
 
 .section-title {
-width: 65%;
-font-family: Avalon,sans-serif;
-font-weight: 700;
-font-size: 2rem;
-padding: 0 0.9em;
-line-height: 1.100em;
-letter-spacing: -0.015em;
-}
+  /*! width: 65%; */
+  font-family: Avalon, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
 
-.section-title-a {
-
+  /*! padding: 0 0.9em; */
+  line-height: 1.1em;
+  letter-spacing: -0.015em;
   color: #f42;
   text-decoration: none;
 }
 
+.section-title-a {
+  color: #f42;
+  text-decoration: none;
+}
 
 .latest-news-items-container {
-
   width: 65%;
   display: flex;
   flex-wrap: wrap;
@@ -307,31 +305,26 @@ letter-spacing: -0.015em;
 }
 
 .latest-news-item {
-
   width: 25%;
   height: 50%;
   padding: 1em;
 }
 
 .latest-news-item-img {
-
   width: 100%;
 }
 
 .latest-news-item-h3 {
-
   font-size: 1.143rem;
-  line-height: 1.250em;
+  line-height: 1.25em;
   font-weight: 700;
 }
 
 .latest-news-item-h3-a {
-
   color: #000;
 }
 
 .latest-news-item-h4 {
-
   font-size: 0.929rem;
   line-height: 1.538em;
   font-weight: 400;
@@ -339,28 +332,17 @@ letter-spacing: -0.015em;
 }
 
 .latest-news-item-h4-a {
-
   color: rgb(170, 170, 170);
 }
 
-.funding {
-
-}
-
 .funding-header {
-
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.funding-navbar {
-
-}
-
 .funding-navbar-a {
-
   color: #f42;
   font-size: 0.9rem;
   border-right: solid 1px #f42;
@@ -368,31 +350,28 @@ letter-spacing: -0.015em;
 }
 
 .last-nav-item {
-  border: none ;
+  border: none;
 }
 
 .funding-thumbnail-container {
-
   display: flex;
+
   /*! width: 100%; */
   margin: 2em 0.2em;
 }
 
 .funding-thumbnail {
-
   padding: 1em;
-  background-image: linear-gradient(#f42 17.7%,#eeccc6 17.7%,#eeccc6 40%,#fff 40%,#f2f2f2 70%);
+  background-image: linear-gradient(#f42 17.7%, #eeccc6 17.7%, #eeccc6 40%, #fff 40%, #f2f2f2 70%);
   margin-left: 2em;
   width: 100%;
 }
 
 .funding-thumbnail-head {
-
   display: flex;
 }
 
 .funding-thumbnail-head-right {
-  
   width: 69.5%;
   display: flex;
   flex-direction: column;
@@ -400,12 +379,7 @@ letter-spacing: -0.015em;
   padding-left: 1em;
 }
 
-.funding-thumbnail-head-right-bottom {
-  
-}
-
 .funding-thumbnail-head-img {
-
   width: 30.5%;
   padding: 2%;
   position: relative;
@@ -414,32 +388,27 @@ letter-spacing: -0.015em;
 }
 
 .funding-thumbnail-company {
-
   color: white;
   font-size: 1.286rem;
   font-weight: 700;
 }
 
 .funding-thumbnail-price {
-
   font-size: 1.286rem;
   font-weight: 700;
 }
 
 .funding-thumbnail-source {
-
   opacity: 0.5;
   font-size: 0.7rem;
 }
 
 .funding-thumbnail-middle {
-
   padding: 1em 0;
   border-bottom: solid 0.5px #f7c4ab;
 }
 
 .funding-thumbnail-middle-p {
-
   padding: 0.2em;
   font-size: 0.7rem;
   opacity: 0.7;
@@ -448,13 +417,11 @@ letter-spacing: -0.015em;
 
 .fa-tag,
 .fa-briefcase {
-
   font-size: 0.8rem;
   padding-right: 0.3rem;
 }
 
 .funding-thumbnail-bottom {
-
   padding: 1em 0;
   font-size: 0.7rem;
   opacity: 0.9;
@@ -462,7 +429,84 @@ letter-spacing: -0.015em;
 }
 
 .funding-thumbnail-bottom-text {
-
   color: black;
   opacity: 0.7;
+}
+
+/* ----Rubrics-section---- */
+
+.rubric {
+  display: flex;
+
+  /*! align-items: center; */
+  flex-wrap: wrap;
+  padding: 0 1.9em;
+  justify-content: space-between;
+}
+
+.rubric-thumbnail {
+  width: 30%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0.2em;
+}
+
+.rubric-thumbnail > h2 {
+  padding-bottom: 1em;
+}
+
+.rubric-thumbnail-head {
+  max-width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1em 1em;
+}
+
+.rubric-img {
+  max-width: 5rem;
+}
+
+.rubric-background-container {
+  background-image: url(images/Bing-COVID-19-tracker-hed-coronavirus-368x276.jpg);
+
+  /*! background-repeat: no-repeat; */
+  height: 34%;
+  z-index: -1;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+
+  /*! display: block; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.most-popular {
+  font-size: 0.929 rem;
+  line-height: 1.5 em;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  color: white;
+}
+
+.rubric-first-title {
+  font-size: 1.429 rem;
+  line-height: 1.1em;
+  letter-spacing: normal;
+  font-weight: 700;
+  color: white;
+}
+
+.rubric-second-title {
+  color: hsla(0, 0%, 100%, 0.9);
+  font-size: 0.857;
+  line-height: 1.33 em;
+  letter-spacing: normal;
+  font-weight: 500;
+  margin-top: 1em;
 }
