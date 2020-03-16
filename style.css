@@ -12,6 +12,8 @@ html {
 body {
   font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
   font-size: 0.8125rem;
+  min-width: 1450px;
+  min-height: 4830px;
 }
 
 main {
@@ -748,4 +750,11 @@ header {
 #heart-icon {
 
   color: red;
+}
+
+
+@media screen and (max-width: 1450px) {
+  body{
+    min-width: initial;
+  }
 }
