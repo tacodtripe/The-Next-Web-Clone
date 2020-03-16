@@ -753,8 +753,35 @@ header {
 }
 
 
-@media screen and (max-width: 1450px) {
-  body{
+@media (max-width: 768px) {
+  body {
     min-width: initial;
+  }
+
+  .nav-second-anchor {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 1.56px;
+    padding-left: 1rem;
+  }
+
+  .navigation-second-links :nth-last-child(1),
+  .navigation-second-links :nth-last-child(2) {
+    display: none;
+  }
+
+  .fa-bars {
+    font-size: 0;
+  }
+
+  .nav-icon {
+    border: none;
+  }
+
+  .navigation-logo {
+    width: 10%;
+    padding-top: 1.6%;
   }
 }
