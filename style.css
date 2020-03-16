@@ -17,8 +17,20 @@ body {
 main {
 }
 
+footer {
+  
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #aaa;
+}
+
 a {
   text-decoration: none;
+  color: #aaa;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .flex-column-centered {
@@ -591,6 +603,8 @@ header {
   font-weight: 500;
 }
 
+/*----styling latest deals---*/
+
 .latest-deals {
   margin: 7em auto;
 }
@@ -612,7 +626,6 @@ header {
   justify-content: end;
 }
 .latest-deals-thumbnails-img-text {
-  /*! width: 23%; */
   transform: rotate(45deg);
   height: 1rem;
   padding-top: 2em;
@@ -642,4 +655,97 @@ header {
   text-decoration: line-through;
   opacity: 0.7;
   font-size: 0.8rem;
+}
+
+/*----styling footer---*/
+
+
+.footer-bottom-nav {
+
+  background-color: #131313;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.footer-bottom-nav-icon-container {
+
+  display: flex;
+  list-style: none;
+}
+
+.footer-bottom-nav-icon {
+  
+  color: white;
+  font-size: 1.3rem;
+}
+
+.footer-bottom-nav-icon-container li {
+
+  margin: 0 0.5em;
+  border-radius: 7rem;
+  background-color: rgba(36, 35, 35, 0.6);
+  padding: 0.8rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom-nav-icon-container li:hover,
+.footer-bottom-nav-icon-container li:focus {
+  border: solid 0.5px gray;
+  background-color: black;
+}
+
+.footer-bottom-nav-links-container {
+  display: flex;
+  list-style: none;
+}
+
+.footer-bottom-nav-links-container li {
+  margin: 0 0.5em;
+}
+
+.footer-bottom-nav-link:hover,
+.footer-bottom-nav-link:focus {
+  color: lightgray;
+}
+
+.foot-note {
+
+  background-color: black;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-note-p {
+
+  width: 40%;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.5em;
+}
+
+.foot-logo {
+
+  display: inline-block;
+  width: 2.6rem;
+}
+
+.foot-logo-stackpath {
+
+  width: 4rem;
+}
+
+#heart-icon {
+
+  color: red;
 }
