@@ -275,7 +275,8 @@ header {
 
 /* styling the latest news */
 
-.latest-news {
+.latest-news,
+.latest-deals {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -300,14 +301,17 @@ header {
   text-decoration: none;
 }
 
-.latest-news-items-container {
+.latest-news-items-container,
+.latest-deals-thumbnails-container {
   width: 65%;
   display: flex;
   flex-wrap: wrap;
   padding: 0 1.4em;
+  padding-right: 0;
 }
 
-.latest-news-item {
+.latest-news-item,
+.latest-deals-thumbnails {
   width: 25%;
   height: 50%;
   padding: 1em;
@@ -338,7 +342,8 @@ header {
   color: rgb(170, 170, 170);
 }
 
-.funding-header {
+.funding-header,
+.latest-deals-title {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -448,7 +453,6 @@ header {
 
 .rubric-thumbnail {
   width: calc(1/3*100% - 1em);
-  height: 83%;
   display: flex;
   flex-direction: column;
   margin: 2em 0em;
@@ -519,7 +523,6 @@ header {
   justify-content: space-between;
   height: 9%;
   margin-top: 0.2rem;
-  background-color: ;
   background-color: rgba(255, 68, 34, 0.06);
 }
 
@@ -589,21 +592,54 @@ header {
 }
 
 .latest-deals {
-
+  margin: 7em auto;
 }
 
-.latest-deals-title {
+.latest-deals-thumbnails-container{
 
+  width: 100%;
 }
 
-.latest-deals-thumbnails-ribbon {
+.latest-deals-thumbnails {
+}
 
+.latest-deals-background {
+  background:  url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg") right top no-repeat, url("https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg") no-repeat;
+  background-size: 5rem, cover;
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: end;
+}
+.latest-deals-thumbnails-img-text {
+  /*! width: 23%; */
+  transform: rotate(45deg);
+  height: 1rem;
+  padding-top: 2em;
+  position: relative;
+  top: 0.3rem;
+  left: 0.6rem;
+  font-weight: 1000;
 }
 
 .latest-deals-thumbnails-h3 {
 
+  color: black;
+  padding: 0.7em 0;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .latest-deals-thumbnails-h4 {
   
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 1;
+}
+
+.latest-deals-thumbnails-h4-span {
+  
+  text-decoration: line-through;
+  opacity: 0.7;
+  font-size: 0.8rem;
 }
