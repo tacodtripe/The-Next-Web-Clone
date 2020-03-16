@@ -14,6 +14,13 @@ body {
   font-size: 0.8125rem;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: fit-content;
+}
+
 a {
   text-decoration: none;
 }
@@ -437,16 +444,15 @@ header {
 
 .rubric {
   display: flex;
-
-  /*! align-items: center; */
   flex-wrap: wrap;
   padding: 0 1.9em;
   justify-content: space-between;
+  height: 80vh;
 }
 
 .rubric-thumbnail {
   width: 30%;
-  height: 80vh;
+  height: 83%;
   display: flex;
   flex-direction: column;
   margin: 2em 0.2em;
@@ -465,22 +471,14 @@ header {
   padding: 1em 1em;
 }
 
-.rubric-img {
-  max-width: 5rem;
-}
-
 .rubric-background-container {
   background-image: url(images/Bing-COVID-19-tracker-hed-coronavirus-368x276.jpg);
-
-  /*! background-repeat: no-repeat; */
-  height: 34%;
+  height: 19rem;
   z-index: -1;
   position: relative;
   background-repeat: no-repeat;
   background-size: 100%;
   object-fit: cover;
-
-  /*! display: block; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -509,4 +507,78 @@ header {
   letter-spacing: normal;
   font-weight: 500;
   margin-top: 1em;
+}
+
+.rubric-thumbnail-middle {
+  display: flex;
+  justify-content: space-between;
+  height: 9%;
+  margin-top: 0.2rem;
+  background-color: ;
+  background-color: rgba(255, 68, 34, 0.06);
+}
+
+.rubric-middle-titles-container {
+  padding: 0.5em;
+  width: 71%;
+}
+
+.rubric-img {
+  max-width: 25%;
+}
+
+.rubric-middle-title1 {
+  font-size: 0.929;
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: #f42;
+}
+
+.rubric-middle-title2 {
+  font-size: 0.8rem;
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.rubric-thumbnail-bottom {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.rubric-ul {
+  padding-left: 1em;
+}
+
+.rubric-ul > li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #eee;
+}
+
+.rubric-ul ::marker {
+  font-size: 0.7em;
+  color: #f42;
+}
+
+.rubric-bottom-list {
+  font-size: 0.85rem;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+  padding-left: 0.5em;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+}
+
+.rubric-bottom-list :visited {
+  color: #aaa;
+}
+
+.rubric-bottom-list:hover,
+.rubric-bottom-list:focus {
+  color: black;
+  font-weight: 500;
 }
