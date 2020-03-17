@@ -79,12 +79,15 @@ header {
   height: 100%;
   width: 5%;
   background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .top-nav-tnw-logo {
-  object-fit: cover;
+  /*! object-fit: none; */
   padding-bottom: auto;
-  padding-top: 14%;
+  /*! padding-top: 14%; */
 }
 
 .navigation-second {
@@ -108,12 +111,13 @@ header {
   height: 100%;
   display: flex;
   margin-right: 0;
-  width: 7%;
+  width: 3%;
+  justify-content: center;
 }
 
 .nav-icon {
   height: 100%;
-  width: 50%;
+  width: 100%;
   border-left: 0.3px solid rgb(228, 228, 228);
   display: flex;
   justify-content: center;
@@ -124,6 +128,10 @@ header {
   font-size: 1.2rem;
   color: rgb(218, 218, 218);
   font-weight: 900;
+}
+
+#hidden-icon {
+  display: none;
 }
 
 .navigation-third {
@@ -358,6 +366,12 @@ header {
   font-size: 0.6rem;
 }
 
+.latest-news-item-h3-a:hover,
+.latest-news-item-h3-a:focus {
+  color: #f42;
+  text-decoration: underline;
+}
+
 .funding-header,
 .latest-deals-title {
   width: 100%;
@@ -552,7 +566,7 @@ header {
 }
 
 .rubric-middle-title1 {
-  font-size: 0.929;
+  font-size: 0.929rem;
   font-family: Shentox, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
@@ -763,6 +777,11 @@ header {
     height: 5rem;
   }
 
+  footer {
+    
+  height: 50vh;
+  }
+
   /* .nav-second-anchor {
     text-decoration: none;
     color: rgb(170, 170, 170);
@@ -838,7 +857,7 @@ header {
 
   .nav-icon-i {
     font-size: 1rem;
-    color: rgb(218, 218, 218);
+    /*! color: rgb(218, 218, 218); */
     font-weight: 700;
   }
 
@@ -906,4 +925,197 @@ header {
     font-weight: 400;
     color: rgb(170, 170, 170);
   }
+
+  #hidden-icon {
+    display: flex;
+  }
+
+  .latest-news-item,
+  .latest-deals-thumbnails {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  display: flex;
+  }
+
+  .latest-news-items-container {
+  width: 100%;
+  }
+
+  .section-title {
+    width: 100%;
+  }
+
+  .latest-news-item-text-container{
+  display: flex;
+  flex-direction: column;
+  }
+
+  .latest-news-item-img,
+  .latest-deals-background {
+
+  object-fit: cover;
+  width: 7rem;
+  height: 6rem;
+  margin-right: 1.5em;
+  }
+
+  .latest-news-item-h3-a {
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  }
+
+  .latest-news-item-h4-a {
+    
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  font-weight: 400;
+  }
+
+  .general-container {
+
+  width: 100%;
+  padding: 0;
+  }
+
+  .funding-header {
+
+  flex-direction: column;
+  }
+
+  .funding-navbar {
+
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.7em;
+  width: 100%;
+  margin-top: 0.5em;
+  }
+
+  .funding-navbar-a {
+    
+  border: none;
+  padding-top: 1em;
+  }
+
+  .funding-thumbnail-container {
+
+  flex-direction: column;
+  width: 100%;
+  }
+
+  .funding-thumbnail {
+
+  margin: 1em 1em;
+  width: 95%;
+  background-image: linear-gradient(#f42 20.7%, #eeccc6 20.7%, #eeccc6 40%, #fff 40%, #f2f2f2 70%);
+  }
+
+  .funding-thumbnail-head-img {
+
+  width: 13%;
+  }
+
+  .funding-thumbnail-head-right-bottom {
+
+  margin-bottom: 0.8em;
+  }
+
+  .funding-thumbnail-middle-p {
+
+  font-size: 1rem;
+  }
+
+  .fa-tag,
+  .fa-briefcase {
+  font-size: 1rem;
+  }
+
+  .funding-thumbnail-bottom-text {
+    
+  font-size: 1rem;
+  display: inline;
+  }
+
+  .rubric {
+
+  width: 96%;
+  margin: 0 auto;
+  }
+
+  .rubric-thumbnail,
+  .rubric-thumbnail-lr-item {
+    
+  width: 100%;
+  padding: 0;
+  }
+
+  .rubric-thumbnail-lr {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .rubric-background-container {
+
+  height: 60vw;
+  }
+  
+
+  .rubric-thumbnail-middle {
+
+  height: auto;
+  }
+
+  .rubric-middle-title1 {
+
+  font-size: 1.3rem;
+  }
+
+  .rubric-middle-title2 {
+
+  font-size: 1.2rem;
+  }
+
+  .rubric-img {
+
+  object-fit: cover;
+  height: 6rem;
+  width: 6rem;
+  }
+
+  .rubric-bottom-list{
+
+  line-height: 0;
+  font-size: 1rem;
+  }
+
+  .latest-deals-title {
+
+  }
+  
+  .latest-deals-title h3 {
+    width: 25%;
+  }
+
+  .latest-deals-thumbnails-h3 {
+    padding: 0;
+  }
+
+  .latest-deals-thumbnails-h4 {
+    padding-top: 0.5em;
+  }
+
+  .latest-deals-thumbnails-img,
+  .latest-deals-thumbnails-img-text {
+    display: none;
+  }
+
+  .foot-note-p {
+    font-size: 1rem;
+    width: 34%;
+  }
+
 }
