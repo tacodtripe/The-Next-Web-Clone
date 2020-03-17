@@ -12,15 +12,14 @@ html {
 body {
   font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
   font-size: 0.8125rem;
-  min-width: 1450px;
-  min-height: 4830px;
+  width: 100%;
 }
 
 main {
+  width: 100%;
 }
 
 footer {
-  
   height: 30vh;
   display: flex;
   justify-content: center;
@@ -31,8 +30,10 @@ footer {
 a {
   text-decoration: none;
   color: #aaa;
-  font-size: 0.8rem;
-  font-weight: 600;
+
+  /*! font-size: 0.8rem; */
+
+  /* font-weight: 600; */
 }
 
 .flex-column-centered {
@@ -52,6 +53,7 @@ header {
   display: flex;
   flex-direction: column;
   height: 12vh;
+  width: 100%;
 }
 
 .navigation-first {
@@ -59,6 +61,7 @@ header {
   justify-content: space-between;
   background-color: #131313;
   height: 25%;
+  width: 100%;
   align-items: center;
 }
 
@@ -91,9 +94,9 @@ header {
 .navigation-second {
   display: flex;
   height: 100%;
+  width: 95%;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
 }
 
 .nav-second-anchor {
@@ -107,8 +110,6 @@ header {
 
 .navigation-second-icons {
   height: 100%;
-
-  /* width: 5rem; */
   display: flex;
   margin-right: 0;
   width: 7%;
@@ -118,18 +119,21 @@ header {
   height: 100%;
   width: 50%;
   border-left: 0.3px solid rgb(228, 228, 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-icon-i {
   font-size: 1.2rem;
   color: rgb(218, 218, 218);
-  padding: 1.2rem;
   font-weight: 900;
 }
 
 .navigation-third {
   background-color: yellow;
   height: 25%;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -140,8 +144,9 @@ header {
   font-size: 0.8rem;
   font-weight: 501;
   width: 95%;
-  margin-left: 5%;
-  padding-left: 1rem;
+
+  /* margin-left: 5%; */
+  padding-left: 4em;
 }
 
 .navigation-first-right {
@@ -183,9 +188,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.9vh 0.9vw;
-
-  /*! align-items: center; */
+  padding: 1em 1em;
   height: 100%;
   width: 100%;
 }
@@ -241,7 +244,7 @@ header {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1vw 1vh;
+  padding: 1em 1em;
   justify-content: flex-end;
 }
 
@@ -302,7 +305,6 @@ header {
   font-family: Avalon, sans-serif;
   font-weight: 700;
   font-size: 2rem;
-
   padding: 0 0.9em;
   line-height: 1.1em;
   letter-spacing: -0.015em;
@@ -313,6 +315,8 @@ header {
 .section-title-a {
   color: #f42;
   text-decoration: none;
+
+  /*! font-size: 0.8rem; */
 }
 
 .latest-news-items-container,
@@ -343,10 +347,11 @@ header {
 
 .latest-news-item-h3-a {
   color: #000;
+  font-size: 0.8rem;
 }
 
 .latest-news-item-h4 {
-  font-size: 0.929rem;
+  font-size: 0.7rem;
   line-height: 1.538em;
   font-weight: 400;
   color: rgb(170, 170, 170);
@@ -354,6 +359,7 @@ header {
 
 .latest-news-item-h4-a {
   color: rgb(170, 170, 170);
+  font-size: 0.6rem;
 }
 
 .funding-header,
@@ -377,8 +383,6 @@ header {
 
 .funding-thumbnail-container {
   display: flex;
-
-  /*! width: 100%; */
   margin: 2em 0.2em;
 }
 
@@ -466,10 +470,10 @@ header {
 }
 
 .rubric-thumbnail {
-  width: calc(1/3*100% - 1em);
+  width: calc(1 / 3 * 100% - 1em);
   display: flex;
   flex-direction: column;
-  margin: 2em 0em;
+  margin: 2em 0;
 }
 
 .rubric-thumbnail-lr {
@@ -477,7 +481,7 @@ header {
 }
 
 .rubric-thumbnail-lr-item {
-  padding-right: 1.5em;  
+  padding-right: 1.5em;
 }
 
 .rubric-thumbnail > h2 {
@@ -486,7 +490,8 @@ header {
 }
 
 .rubric-thumbnail-head {
-  max-width: 100%;
+  /* max-width: 100%; */
+  width: 100%;
   height: 45%;
   display: flex;
   flex-direction: column;
@@ -508,15 +513,15 @@ header {
 }
 
 .most-popular {
-  font-size: 0.929 rem;
-  line-height: 1.5 em;
+  font-size: 0.929rem;
+  line-height: 1.5em;
   letter-spacing: 0.04em;
   font-weight: 500;
   color: white;
 }
 
 .rubric-first-title {
-  font-size: 1.429 rem;
+  font-size: 1.429rem;
   line-height: 1.1em;
   letter-spacing: normal;
   font-weight: 700;
@@ -526,7 +531,7 @@ header {
 .rubric-second-title {
   color: hsla(0, 0%, 100%, 0.9);
   font-size: 0.857;
-  line-height: 1.33 em;
+  line-height: 1.33em;
   letter-spacing: normal;
   font-weight: 500;
   margin-top: 1em;
@@ -546,7 +551,8 @@ header {
 }
 
 .rubric-img {
-  max-width: 25%;
+  /* max-width: 25%; */
+  width: 25%;
 }
 
 .rubric-middle-title1 {
@@ -605,40 +611,48 @@ header {
   font-weight: 500;
 }
 
-/*----styling latest deals---*/
+/* ----styling latest deals--- */
 
 .latest-deals {
   margin: 7em auto;
 }
 
-.latest-deals-thumbnails-container{
-
+.latest-deals-thumbnails-container {
   width: 100%;
 }
 
-.latest-deals-thumbnails {
-}
+/* .latest-deals-thumbnails {
+} */
 
 .latest-deals-background {
-  background:  url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg") right top no-repeat, url("https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg") no-repeat;
-  background-size: 5rem, cover;
+  background: url("https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg") no-repeat;
   width: 100%;
-  height: 12rem;
+  height: 14rem;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  background-size: cover;
 }
+
+.latest-deals-thumbnails-img {
+  width: 34%;
+  position: absolute;
+  z-index: 1;
+}
+
 .latest-deals-thumbnails-img-text {
   transform: rotate(45deg);
-  height: 1rem;
-  padding-top: 2em;
-  position: relative;
-  top: 0.3rem;
-  left: 0.6rem;
-  font-weight: 1000;
+  height: 2rem;
+  padding-top: 1em;
+  position: absolute;
+  top: 1.3em;
+  left: 18em;
+  font-weight: 800;
+  z-index: 2;
 }
 
 .latest-deals-thumbnails-h3 {
-
   color: black;
   padding: 0.7em 0;
   font-size: 1rem;
@@ -646,47 +660,39 @@ header {
 }
 
 .latest-deals-thumbnails-h4 {
-  
   font-size: 1.1rem;
   color: #555;
   font-weight: 1;
 }
 
 .latest-deals-thumbnails-h4-span {
-  
   text-decoration: line-through;
   opacity: 0.7;
   font-size: 0.8rem;
 }
 
-/*----styling footer---*/
-
+/* ----styling footer--- */
 
 .footer-bottom-nav {
-
   background-color: #131313;
   height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  display: flex;
 }
 
 .footer-bottom-nav-icon-container {
-
   display: flex;
   list-style: none;
 }
 
 .footer-bottom-nav-icon {
-  
   color: white;
   font-size: 1.3rem;
 }
 
 .footer-bottom-nav-icon-container li {
-
   margin: 0 0.5em;
   border-radius: 7rem;
   background-color: rgba(36, 35, 35, 0.6);
@@ -698,12 +704,6 @@ header {
   align-items: center;
 }
 
-.footer-bottom-nav-icon-container li:hover,
-.footer-bottom-nav-icon-container li:focus {
-  border: solid 0.5px gray;
-  background-color: black;
-}
-
 .footer-bottom-nav-links-container {
   display: flex;
   list-style: none;
@@ -713,13 +713,18 @@ header {
   margin: 0 0.5em;
 }
 
+.footer-bottom-nav-icon-container li:hover,
+.footer-bottom-nav-icon-container li:focus {
+  border: solid 0.5px gray;
+  background-color: black;
+}
+
 .footer-bottom-nav-link:hover,
 .footer-bottom-nav-link:focus {
   color: lightgray;
 }
 
 .foot-note {
-
   background-color: black;
   height: 35%;
   display: flex;
@@ -729,7 +734,6 @@ header {
 }
 
 .foot-note-p {
-
   width: 40%;
   text-align: center;
   font-size: 0.8rem;
@@ -737,25 +741,25 @@ header {
 }
 
 .foot-logo {
-
   display: inline-block;
   width: 2.6rem;
 }
 
 .foot-logo-stackpath {
-
   width: 4rem;
 }
 
 #heart-icon {
-
   color: red;
 }
 
+/* @media (max-width: 1284px){
 
-@media (max-width: 768px) {
+} */
+
+@media (max-width: 774px) {
   body {
-    min-width: initial;
+    width: 100%;
   }
 
   .nav-second-anchor {
