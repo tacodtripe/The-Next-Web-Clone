@@ -30,10 +30,6 @@ footer {
 a {
   text-decoration: none;
   color: #aaa;
-
-  /*! font-size: 0.8rem; */
-
-  /* font-weight: 600; */
 }
 
 .flex-column-centered {
@@ -758,10 +754,6 @@ header {
 } */
 
 @media (max-width: 774px) {
-  body {
-    width: 100%;
-  }
-
   .nav-second-anchor {
     text-decoration: none;
     color: rgb(170, 170, 170);
@@ -787,5 +779,64 @@ header {
   .navigation-logo {
     width: 10%;
     padding-top: 1.6%;
+  }
+
+  /* the main titles section */
+
+  .main-tiles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .main-tiles-first-tile {
+    width: 100%;
+    height: calc(100% / 3);
+    margin-bottom: 1rem;
+  }
+
+  .main-tiles-second-tile-container {
+    width: 100%;
+    height: 2fr;
+  }
+
+  .main-second-tile-top-background {
+    height: 1fr;
+    width: 100%;
+  }
+
+  .main-second-tile-bottom-background {
+    height: 1fr;
+    width: 100%;
+  }
+
+  .first-tile-gradient-red,
+  .second-tile-gradient,
+  .cover-content-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-tiles-first-cover-logo p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .main-tiles-title,
+  .main-tiles-second-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.1em;
+    letter-spacing: -0.015;
+  }
+
+  .main-tiles-info,
+  .main-tiles-info a {
+    font-size: 0.8rem;
+    line-height: 1.1em;
+    letter-spacing: normal;
+    font-weight: 400;
+    color: rgb(170, 170, 170);
   }
 }
