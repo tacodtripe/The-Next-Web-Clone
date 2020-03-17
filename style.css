@@ -166,12 +166,12 @@ header {
 .main-tiles {
   display: flex;
   width: 100%;
-  height: fit-content;
+  height: 55vh;
 }
 
 .main-tiles-first-tile {
   width: 67%;
-  height: 55vh;
+  height: auto;
   margin-right: 1rem;
   background-image: url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F03%2Fheader-image-entry-level-AirPods-Pro-Lite-FINAL.png&signature=40bd8b658a58cdd448cc9efcb8b027eb);
   display: block;
@@ -213,11 +213,12 @@ header {
 }
 
 .main-tiles-title {
-  font-size: 4rem;
+  font-size: 4vw;
   letter-spacing: -0.015em;
   font-weight: 700;
   line-height: 1em;
   color: white;
+  overflow: hidden;
 }
 
 .main-tiles-info {
@@ -238,9 +239,10 @@ header {
 
 .main-tiles-second-tile-container {
   width: 32%;
-  height: 55vh;
+  height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-tiles-second-tile {
@@ -250,19 +252,21 @@ header {
   flex-direction: column;
   padding: 1em 1em;
   justify-content: flex-end;
+  
 }
 
 .main-tiles-second-title {
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: 700;
   letter-spacing: -0.015;
   line-height: 1.1em;
   color: white;
+  overflow: hidden;
 }
 
 .main-second-tile-top-background {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg);
-  height: 50%;
+  height: 48%;
   z-index: -1;
   position: relative;
   background-repeat: no-repeat;
@@ -282,9 +286,9 @@ header {
 }
 
 .main-second-tile-bottom-background {
-  margin-top: 1rem;
+  /*! margin-top: 1rem; */
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Tesla-model-s-range-390-miles-improve-battery-tech-drive-model-x-musk-twitter-tweet-796x448.jpg);
-  height: 50%;
+  height: 48%;
   z-index: -1;
   position: relative;
   background-repeat: no-repeat;
@@ -337,6 +341,10 @@ header {
   width: 25%;
   height: 50%;
   padding: 1em;
+}
+
+.latest-deals-ribbon-container{
+  position: relative;
 }
 
 .latest-news-item-img {
@@ -646,20 +654,17 @@ header {
 }
 
 .latest-deals-thumbnails-img {
-  width: 34%;
+  width: 100%;
   position: absolute;
   z-index: 1;
 }
 
 .latest-deals-thumbnails-img-text {
   transform: rotate(45deg);
-  height: 2rem;
-  padding-top: 1em;
   position: absolute;
-  top: 1.3em;
-  left: 18em;
   font-weight: 800;
   z-index: 2;
+  transform-origin: 1% 404%;
 }
 
 .latest-deals-thumbnails-h3 {
@@ -763,8 +768,14 @@ header {
   color: red;
 }
 
-/* @media (max-width: 1284px){
+/* @media (max-width: 1504px){
+  .main-tiles-title {
+    font-size: 3rem;
+  }
 
+  .main-tiles-second-title {
+    font-size: 1rem;
+  }
 } */
 
 @media (max-width: 774px) {
@@ -782,31 +793,9 @@ header {
   height: 50vh;
   }
 
-  /* .nav-second-anchor {
-    text-decoration: none;
-    color: rgb(170, 170, 170);
-    font-weight: 500;
-    font-size: 0.85rem;
-    letter-spacing: 1.56px;
-    padding-left: 1rem;
-  } */
-
-  /* .navigation-second-links :nth-last-child(1),
-  .navigation-second-links :nth-last-child(2) {
-    display: none;
-  } */
-
   .navigation-second-links {
     display: none;
   }
-
-  /* .fa-bars {
-    font-size: 0;
-  } */
-
-  /* .nav-icon {
-    border: none;
-  } */
 
   .fa-bars {
     color: brown;
