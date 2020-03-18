@@ -383,7 +383,6 @@ header {
 }
 
 .funding-thumbnail {
-  background-image: linear-gradient(#f42 17.7%, #eeccc6 17.7%, #eeccc6 40%, #fff 40%, #f2f2f2 70%);
   width: 23%;
 }
 
@@ -392,25 +391,27 @@ header {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  height: 20vh;
+  height: 15vh;
+  background-image: linear-gradient(#f42 50%, #eeccc6 50%, #eeccc6 50%, #f2e5e5 50%);
 }
 
 .funding-thumbnail-head-right {
   width: 69.5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   height: 100%;
 }
 
 .funding-thumbnail-head-img {
-  width: 4rem;
+  width: 6em;
 }
 
 .funding-thumbnail-company {
   color: white;
   font-size: 1.286rem;
   font-weight: 700;
+  margin: 1em 0;
 }
 
 .funding-thumbnail-price {
@@ -426,6 +427,7 @@ header {
 .funding-thumbnail-middle {
   padding: 1em 1em;
   border-bottom: solid 0.5px #f7c4ab;
+  background-image: linear-gradient(#fff, #f2f2f2);
 }
 
 .funding-thumbnail-middle-p {
@@ -446,6 +448,7 @@ header {
   font-size: 0.7rem;
   opacity: 0.9;
   font-weight: 300;
+  background-image: linear-gradient(#fff, #f2f2f2);
 }
 
 .funding-thumbnail-bottom-text {
@@ -465,8 +468,6 @@ header {
   display: flex;
   flex-direction: column;
   width: 32%;
-
-  /*! justify-content: space-between; */
 }
 
 .rubric-thumbnail-lr {
@@ -1020,7 +1021,6 @@ header {
 
   .funding-thumbnail {
     width: 100%;
-    background-image: linear-gradient(#f42 25%, #eeccc6 25%, #eeccc6 55%, #fff 55%, #f2f2f2 70%);
     margin: 1rem 0;
   }
 
