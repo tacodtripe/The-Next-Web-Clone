@@ -3,7 +3,7 @@
 
 
 ## Description
-In this project, we tried to build a clone of "the Next Web magazine" (https://thenextweb.com/). The purpose of this exercise is to learn about web responsiveness and its best practices.
+In this project, we tried to build a clone of ![the Next Web magazine](https://thenextweb.com/). The purpose of this exercise is to learn about web responsiveness and its best practices.
 
 
 ## Built With
