@@ -25,6 +25,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   color: #aaa;
+  margin-top: 8rem;
 }
 
 a {
@@ -341,7 +342,7 @@ header {
 }
 
 .latest-deals-ribbon-container {
-  position: relative;
+  /*! position: relative; */
 }
 
 .latest-news-item-img {
@@ -652,10 +653,11 @@ header {
 
 .latest-deals-thumbnails-img-text {
   transform: rotate(45deg);
-  position: absolute;
+
+  /*! position: absolute; */
   font-weight: 800;
   z-index: 2;
-  transform-origin: 1% 404%;
+  transform-origin: -43% 36%;
 }
 
 .latest-deals-thumbnails-h3 {
