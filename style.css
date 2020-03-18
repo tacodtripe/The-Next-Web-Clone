@@ -17,6 +17,7 @@ body {
 
 main {
   width: 100%;
+  margin-top: 12vh;
 }
 
 footer {
@@ -33,12 +34,6 @@ a {
   color: #aaa;
 }
 
-.flex-column-centered {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .general-container {
   margin: 0 auto;
   margin: 3vh auto;
@@ -52,6 +47,10 @@ header {
   flex-direction: column;
   height: 12vh;
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  background-color: white;
 }
 
 .navigation-first {
@@ -61,6 +60,8 @@ header {
   height: 25%;
   width: 100%;
   align-items: center;
+  /*! position: fixed; */
+  top: 0;
 }
 
 .navigation-first a {
@@ -99,7 +100,7 @@ header {
 .navigation-second-icons {
   height: 100%;
   display: flex;
-  width: 10%;
+  width: 6%;
 }
 
 .nav-icon {
@@ -109,7 +110,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2em;
 }
 
 .nav-icon-i {
@@ -297,20 +297,14 @@ header {
   display: flex;
   flex-direction: column;
 
-  /*! margin: 3vh auto; */
 
-  /*! width: 75%; */
   align-items: flex-start;
-  width: 96%;
-  min-height: 100vh;
-  margin-left: 2%;
-  margin-right: 2%;
 }
 
 .section-title {
   font-family: Avalon, sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2vw;
   line-height: 1.1em;
   letter-spacing: -0.015em;
   color: #f42;
@@ -328,14 +322,13 @@ header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .latest-news-item,
 .latest-deals-thumbnails {
   width: 23%;
 
-  /*! height: 50%; */
+  margin-right: 1%;
 }
 
 .latest-deals-ribbon-container {
@@ -399,6 +392,7 @@ header {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .funding-thumbnail {
@@ -805,6 +799,35 @@ header {
     width: 100%;
     height: 100%;
   }
+
+  .latest-news-item, .latest-deals-thumbnails {
+    width: 31%;
+  }
+
+  .funding-header {
+    flex-direction: column;
+  }
+
+  .funding-navbar {
+    display: flex;
+    width: 100%;
+  }
+
+  .funding-navbar-a {
+    padding: 0 0.6em;
+  }
+
+  .funding-navbar :nth-child(1) {
+    padding-left: 0;
+  }
+
+  .funding-thumbnail {
+    width: 48%;
+    margin-right: 1%;
+    margin-top: 2%;
+  }
+
+  
 }
 
 @media (max-width: 774px) {
@@ -847,6 +870,10 @@ header {
 
   .top-nav-tnw-logo {
     padding: 1em;
+  }
+
+  .navigation-second-icons {
+  width: 25%;
   }
 
   .navigation-third {
@@ -984,11 +1011,7 @@ header {
   .funding-navbar {
     display: flex;
     flex-direction: column;
-
-    /*! padding: 0 1.7em; */
     width: 100%;
-
-    /*! margin-top: 0.5em; */
   }
 
   .funding-navbar-a {
