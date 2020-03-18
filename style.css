@@ -99,9 +99,7 @@ header {
 .navigation-second-icons {
   height: 100%;
   display: flex;
-  margin-right: 0;
-  width: 3%;
-  justify-content: center;
+  width: 10%;
 }
 
 .nav-icon {
@@ -764,7 +762,7 @@ header {
     height: 12vh;
     width: 100%;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 25% 50% 25%;
+    grid-template-rows: 25% 45% 30%;
     grid-template-areas:
       "logo black-nav"
       "logo white-nav"
@@ -773,112 +771,95 @@ header {
 
   .navigation-first {
     grid-area: black-nav;
-    display: flex;
-    justify-content: space-between;
-    background-color: #131313;
-    align-items: center;align-items
+    height: 100%;
+    width: 100%;
   }
 
   .white-nav {
     grid-area: white-nav;
-    display: flex;
-
-    /*! flex-direction: column; */
     width: 100%;
     height: 100%;
+  }
+
+  .navigation-second-links :nth-last-child(1),
+  .navigation-second-links :nth-last-child(2) {
+    display: none;
   }
 
   .navigation-logo {
     grid-area: logo;
-    height: 100%;
-    width: 10%;
     background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .top-nav-tnw-logo {
+    padding: 1em;
   }
 
   .navigation-third {
     grid-area: yellow-nav;
-
-    /* background-color: yellow;
-    */
-
+    width: 100%;
     height: 100%;
-    width: 100%; /*
-    display: flex;
-    align-items: center; */
   }
 }
 
 @media (max-width: 774px) {
-  .navigation-first {
-    display: none;
-  }
-
-  header {
-    width: 100%;
-    height: 5rem;
-  }
-
   footer {
     height: 50vh;
   }
 
+  .navigation-first,
   .navigation-second-links {
     display: none;
+  }
+
+  header {
+    display: grid;
+    height: 12vh;
+    width: 100%;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas:
+      "logo white-nav"
+      "yellow-nav yellow-nav";
+  }
+
+  .white-nav {
+    grid-area: white-nav;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
+  .navigation-logo {
+    grid-area: logo;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .top-nav-tnw-logo {
+    padding: 1em;
+  }
+
+  .navigation-third {
+    grid-area: yellow-nav;
+    width: 100%;
+    height: 100%;
   }
 
   .fa-bars {
     color: brown;
   }
 
-  .navigation-logo {
-    height: 100%;
-    width: 10%;
-    background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .navigation-top-middle {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 50%;
-  }
-
-  .navigation-second {
-    width: 20%;
-    height: 100%;
-  }
-
-  .navigation-second-icons {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .navigation-third {
-    width: 100%;
-    height: 50%;
-  }
-
-  .nav-icon {
-    height: 100%;
-    width: 50%;
-    border-left: 0.1px solid rgb(228, 228, 228);
-  }
-
-  .nav-icon-i {
-    font-size: 1rem;
-    font-weight: 700;
-  }
 
   /* the main titles section */
 
@@ -889,8 +870,6 @@ header {
     min-height: 100vh;
     margin-left: 2%;
     margin-right: 2%;
-
-    /*! height: fit-content; */
   }
 
   .main-tiles-first-tile {
