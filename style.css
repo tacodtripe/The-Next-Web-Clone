@@ -617,19 +617,17 @@ header {
 
 .latest-deals-thumbnails-container {
   width: 100%;
+  height: 70vh;
 }
 
 .latest-deals-background {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg), url("https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg");
-  width: 100%;
-  height: 14rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  background-size: 35%, cover;
+  background-position: left 100% top 0, left 0 top 0;
+  background-repeat: no-repeat, no-repeat;
+  height: 70%;
   position: relative;
-  background-size: 36%, cover;
-  background-position: left 99% top 0, left 0 top 0;
-  background-repeat: no-repeat;
+  background-clip: border-box;
 }
 
 .latest-deals-thumbnails-img {
@@ -641,10 +639,10 @@ header {
 .latest-deals-thumbnails-img-text {
   transform: rotate(45deg);
 
-  /*! position: absolute; */
   font-weight: 800;
   z-index: 2;
   transform-origin: -43% 36%;
+  position: absolute;
 }
 
 .latest-deals-thumbnails-h3 {
@@ -817,7 +815,7 @@ header {
     padding: 0 0.6em;
   }
 
-  .funding-navbar :nth-child(1) {
+  .funding-navbar-a :nth-child(1) {
     padding-left: 0;
   }
 
