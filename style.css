@@ -102,7 +102,7 @@ header {
 }
 
 .top-nav-tnw-logo {
-  padding-bottom: auto;
+  width: 100%;
 }
 
 .white-nav {
@@ -883,19 +883,17 @@ header {
     padding-left: 0;
   }
 
-  /* .funding-thumbnail-container :nth-last-child(1) {
-    display: none;
-  } */
-
   .fund-hide {
     display: none;
   }
 
   .funding-thumbnail,
   .rubric-thumbnail {
-    width: 48%;
-    /*! margin-top: 1rem; */
-    /*! height: 45%; */
+    width: 32%;
+  }
+
+  .rubric-thumbnail {
+    width: 49%;
   }
 
   .latest-deals-thumbnails-img-text {
