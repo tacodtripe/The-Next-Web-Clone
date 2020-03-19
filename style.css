@@ -17,11 +17,12 @@ body {
 
 main {
   width: 100%;
-  margin-top: 12vh;
+
+  /*! margin-top: 0.5rem; */
 }
 
 footer {
-  height: 30vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -37,7 +38,21 @@ a {
 .general-container {
   margin: 0 auto;
   margin: 3vh auto;
-  width: 75%;
+  max-width: 1192px;
+}
+
+@font-face {
+  font-family: ARS Maquette;
+  src: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-regular.eot#iefix") format("embedded-opentype"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-regular.woff") format("woff"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avalon;
+  src: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/avalon-bold.eot#iefix") format("embedded-opentype"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/avalon-bold.woff") format("woff"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/avalon-bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
 }
 
 /* --------------------top nav styling----------------- */
@@ -45,9 +60,9 @@ a {
 header {
   display: flex;
   flex-direction: column;
-  height: 12vh;
+  height: 6rem;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 4;
   background-color: white;
@@ -151,13 +166,16 @@ header {
 .main-tiles {
   display: flex;
   width: 100%;
-  height: 55vh;
+  max-height: 560px;
+  height: 60vh;
+  justify-content: space-between;
 }
 
 .main-tiles-first-tile {
   width: 67%;
   height: auto;
-  margin-right: 1rem;
+
+  /*! margin-right: 1rem; */
   background-image: url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F03%2Fheader-image-entry-level-AirPods-Pro-Lite-FINAL.png&signature=40bd8b658a58cdd448cc9efcb8b027eb);
   display: block;
   position: relative;
@@ -177,7 +195,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1em 1em;
+  padding: 2em 4em;
   height: 100%;
   width: 100%;
 }
@@ -292,12 +310,12 @@ header {
 .section-title {
   font-family: Avalon, sans-serif;
   font-weight: 700;
-  font-size: 2vw;
+  font-size: 2rem;
   line-height: 1.1em;
   letter-spacing: -0.015em;
   color: #f42;
   text-decoration: none;
-  margin: 2.5vh 0;
+  margin: 1rem 0;
 }
 
 .section-title-a {
@@ -316,6 +334,7 @@ header {
 .latest-news-item,
 .latest-deals-thumbnails {
   width: 24%;
+  margin-bottom: 2rem;
 }
 
 .latest-news-items-container :nth-child(4n) {
@@ -334,11 +353,12 @@ header {
 
 .latest-news-item-h3-a {
   color: #000;
-  font-size: 0.8rem;
+
+  /*! font-size: 0.8rem; */
 }
 
 .latest-news-item-h4 {
-  font-size: 0.7rem;
+  font-size: 0.929rem;
   line-height: 1.538em;
   font-weight: 400;
   color: rgb(170, 170, 170);
@@ -346,7 +366,8 @@ header {
 
 .latest-news-item-h4-a {
   color: rgb(170, 170, 170);
-  font-size: 0.6rem;
+
+  /*! font-size: 0.6rem; */
 }
 
 .latest-news-item-h3-a:hover,
@@ -391,12 +412,12 @@ header {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  height: 15vh;
+  height: 7rem;
   background-image: linear-gradient(#f42 50%, #eeccc6 50%, #eeccc6 50%, #f2e5e5 50%);
 }
 
 .funding-thumbnail-head-right {
-  width: 69.5%;
+  width: 68.5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -404,7 +425,7 @@ header {
 }
 
 .funding-thumbnail-head-img {
-  width: 6em;
+  width: 5em;
 }
 
 .funding-thumbnail-company {
@@ -467,7 +488,7 @@ header {
 .rubric-thumbnail {
   display: flex;
   flex-direction: column;
-  width: 32%;
+  width: 23rem;
 }
 
 .rubric-thumbnail-lr {
@@ -489,11 +510,11 @@ header {
 
 .rubric-background-container {
   background-image: url(images/Bing-COVID-19-tracker-hed-coronavirus-368x276.jpg);
-  height: 19rem;
+  height: 17.25rem;
   z-index: -1;
   position: relative;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% auto;
   object-fit: cover;
   display: flex;
   flex-direction: column;
@@ -514,6 +535,7 @@ header {
   letter-spacing: normal;
   font-weight: 700;
   color: white;
+  font-family: Avalon, Arial, Helvetica, sans-serif;
 }
 
 .rubric-second-title {
@@ -528,14 +550,15 @@ header {
 .rubric-thumbnail-middle {
   display: flex;
   justify-content: space-between;
-  height: 10vh;
+  height: 6rem;
   background-color: rgba(255, 68, 34, 0.06);
   margin: 0.1rem 0;
 }
 
 .rubric-middle-titles-container {
   padding: 0.5em;
-  width: 71%;
+
+  /*! width: 22rem; */
 }
 
 .rubric-img {
@@ -553,10 +576,10 @@ header {
 }
 
 .rubric-middle-title2 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #f42;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.25em;
 }
 
 .rubric-thumbnail-bottom {
@@ -580,7 +603,7 @@ header {
 }
 
 .rubric-bottom-list {
-  font-size: 0.85rem;
+  font-size: 0.929rem;
   line-height: 1.5em;
   font-weight: 400;
   color: rgb(85, 85, 85);
@@ -729,6 +752,68 @@ header {
 
 #heart-icon {
   color: red;
+}
+
+@media screen and (max-width: 1024) {
+  .main-tiles {
+    width: 96%;
+    min-height: 100vh;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .main-tiles-first-tile {
+    width: 100%;
+    height: 33%;
+    margin-bottom: 1rem;
+  }
+
+  .main-tiles-second-tile-container {
+    width: 100%;
+    height: 60%;
+  }
+
+  .main-second-tile-top-background {
+    height: 48%;
+    width: 100%;
+  }
+
+  .main-second-tile-bottom-background {
+    height: 48%;
+    width: 100%;
+  }
+
+  .first-tile-gradient-red,
+  .second-tile-gradient,
+  .cover-content-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-tiles-first-cover-logo p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .main-tiles-title,
+  .main-tiles-second-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.1em;
+    letter-spacing: -0.015;
+  }
+
+  .main-tiles-info,
+  .main-tiles-info a {
+    font-size: 0.8rem;
+    line-height: 1.1em;
+    letter-spacing: normal;
+    font-weight: 400;
+  }
+
+  #hidden-icon {
+    display: flex;
+  }
 }
 
 @media (max-width: 980px) {
