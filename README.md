@@ -23,7 +23,7 @@ firefox index.html
 
 
 ## Demo
-https://rawcdn.githack.com/tacodtripe/The-Next-Web-Clone/98de4adbe8396e8ed4db3c6b5b2f14cc2b051f2d/index.html
+https://raw.githack.com/tacodtripe/The-Next-Web-Clone/UXdesign/index.html
 
 
 ## Authors
