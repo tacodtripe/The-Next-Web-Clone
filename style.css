@@ -92,8 +92,8 @@ header {
   font-size: 0.8rem;
   line-height: 2.462em;
   font-weight: 500;
-  color: hsla(0, 0%, 100%, 0.6);
-  font-family: Liberation Sans, sans-serif;
+  color: hsla(0,0%,100%,.6);
+  font-family: Liberation Sans;
 }
 
 .navigation-logo {
@@ -162,7 +162,6 @@ header {
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 400;
-
   /*! width: 81%; */
   padding-left: 10em;
 }
@@ -195,7 +194,6 @@ header {
   position: relative;
   z-index: -1;
   background-repeat: no-repeat;
-
   /*! object-fit: fill; */
   background-size: 300% auto;
   background-position: top;
@@ -336,8 +334,7 @@ header {
   letter-spacing: -0.015em;
   color: #f42;
   text-decoration: none;
-
-  /*! margin: 2rem 0; */
+  margin: 1rem 0;
 }
 
 .section-title-a {
@@ -411,7 +408,6 @@ header {
 
 .funding-navbar-a {
   color: #f42;
-
   /*! font-size: 0.9rem; */
   border-right: solid 1px #f42;
   padding: 0 0.6em;
@@ -458,6 +454,8 @@ header {
   color: white;
   font-size: 1.286rem;
   font-weight: 700;
+
+  /*! margin: 1em 0; */
   line-height: 1.25;
   font-family: Lbearation Sans, sans-serif;
 }
@@ -480,10 +478,14 @@ header {
   border-bottom: solid 0.5px #f7c4ab;
   background-image: linear-gradient(#fff, #f2f2f2);
   height: 28.87%;
+  /*! padding: 0.2em; */
   font-size: 0.929rem;
   opacity: 0.7;
   font-weight: 400;
   line-height: 1.692em;
+}
+
+.funding-thumbnail-middle-p {
 }
 
 .fa-tag,
@@ -495,7 +497,6 @@ header {
 .funding-thumbnail-bottom {
   padding: 1em 1em;
   font-size: 0.857rem;
-
   /*! opacity: 0.9; */
   font-weight: 400;
   background-image: linear-gradient(#fff, #f2f2f2);
@@ -518,7 +519,8 @@ header {
 .rubric-thumbnail {
   display: flex;
   flex-direction: column;
-  width: 23rem;
+  width: 32%;
+  margin: 1.5rem 0;
 }
 
 .rubric-thumbnail-lr {
@@ -539,8 +541,8 @@ header {
 }
 
 .rubric-background-container {
-  background-image: url(images/Bing-COVID-19-tracker-hed-coronavirus-368x276.jpg);
-  height: 17.25rem;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/02/bill-gates-368x276.jpg");
+  height: 25.17rem;
   z-index: -1;
   position: relative;
   background-repeat: no-repeat;
@@ -549,6 +551,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-position: top;
 }
 
 .most-popular {
@@ -847,9 +850,9 @@ header {
     padding-right: 0.7rem;
   }
 
-  .latest-news-item {
-    height: 13.75rem;
-  }
+   .latest-news-item {
+     height: 13.75rem;
+   }
 
   .latest-news-item,
   .latest-deals-thumbnails {
@@ -875,7 +878,7 @@ header {
   .funding-navbar-a {
     padding: 0 0.6em;
   }
-
+  
   .funding-navbar :nth-child(1) {
     padding-left: 0;
   }
@@ -890,9 +893,9 @@ header {
 
   .funding-thumbnail,
   .rubric-thumbnail {
-    width: 32%;
-    margin-top: 1rem;
-    height: 17.75rem;
+    width: 48%;
+    /*! margin-top: 1rem; */
+    /*! height: 45%; */
   }
 
   .latest-deals-thumbnails-img-text {
