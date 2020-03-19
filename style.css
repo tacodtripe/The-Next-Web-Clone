@@ -7,6 +7,7 @@
 html {
   padding: 0;
   margin: 0;
+  font-size: 14px;
 }
 
 body {
@@ -55,6 +56,13 @@ a {
   font-weight: 700;
 }
 
+@font-face {
+  font-family: Shentox;
+  src: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot#iefix") format("embedded-opentype"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff2") format("woff2"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff") format("woff"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
 /* --------------------top nav styling----------------- */
 
 header {
@@ -79,10 +87,13 @@ header {
 }
 
 .navigation-first a {
-  color: white;
   text-decoration: none;
-  padding: 0.6em;
-  font-size: 0.7rem;
+  padding: 0.15em;
+  font-size: 0.8rem;
+  line-height: 2.462em;
+  font-weight: 500;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: Liberation Sans, sans-serif;
 }
 
 .navigation-logo {
@@ -104,11 +115,13 @@ header {
 
 .nav-second-anchor {
   text-decoration: none;
-  color: rgb(170, 170, 170);
+  color: #aaa;
   font-weight: 500;
-  font-size: 0.85rem;
-  letter-spacing: 1.56px;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
   padding-left: 1rem;
+  line-height: 1em;
+  font-family: Shentox, sans-serif;
 }
 
 .navigation-second-icons {
@@ -148,9 +161,10 @@ header {
   color: #131313;
   text-decoration: none;
   font-size: 0.8rem;
-  font-weight: 501;
-  width: 95%;
-  padding-left: 4em;
+  font-weight: 400;
+
+  /*! width: 81%; */
+  padding-left: 10em;
 }
 
 .navigation-first-right {
@@ -176,10 +190,15 @@ header {
   height: auto;
 
   /*! margin-right: 1rem; */
-  background-image: url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F03%2Fheader-image-entry-level-AirPods-Pro-Lite-FINAL.png&signature=40bd8b658a58cdd448cc9efcb8b027eb);
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/boris-influencer-796x417.png);
   display: block;
   position: relative;
   z-index: -1;
+  background-repeat: no-repeat;
+
+  /*! object-fit: fill; */
+  background-size: 300% auto;
+  background-position: top;
 }
 
 .first-tile-gradient-red {
@@ -268,13 +287,14 @@ header {
 
 .main-second-tile-top-background {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg);
-  height: 48%;
+  height: 49.5%;
   z-index: -1;
   position: relative;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 288% auto;
   object-fit: cover;
   display: block;
+  background-position: center;
 }
 
 .second-tile-gradient {
@@ -289,13 +309,14 @@ header {
 
 .main-second-tile-bottom-background {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Tesla-model-s-range-390-miles-improve-battery-tech-drive-model-x-musk-twitter-tweet-796x448.jpg);
-  height: 48%;
+  height: 49.5%;
   z-index: -1;
   position: relative;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 287% auto;
   object-fit: cover;
   display: block;
+  background-position: left;
 }
 
 /* styling the latest news */
@@ -315,7 +336,8 @@ header {
   letter-spacing: -0.015em;
   color: #f42;
   text-decoration: none;
-  margin: 1rem 0;
+
+  /*! margin: 2rem 0; */
 }
 
 .section-title-a {
@@ -346,9 +368,10 @@ header {
 }
 
 .latest-news-item-h3 {
-  font-size: 1.143rem;
-  line-height: 1.25em;
+  font-size: 1rem;
+  line-height: 1.286em;
   font-weight: 700;
+  font-family: Liberation Sans, sans-serif;
 }
 
 .latest-news-item-h3-a {
@@ -358,10 +381,11 @@ header {
 }
 
 .latest-news-item-h4 {
-  font-size: 0.929rem;
-  line-height: 1.538em;
+  font-size: 0.8rem;
+  line-height: 1.5em;
   font-weight: 400;
   color: rgb(170, 170, 170);
+  font-family: Liberation Sans, sans-serif;
 }
 
 .latest-news-item-h4-a {
@@ -382,12 +406,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin: 1.5vh 0;
+  margin: 0.5rem 0;
 }
 
 .funding-navbar-a {
   color: #f42;
-  font-size: 0.9rem;
+
+  /*! font-size: 0.9rem; */
   border-right: solid 1px #f42;
   padding: 0 0.6em;
 }
@@ -405,6 +430,7 @@ header {
 
 .funding-thumbnail {
   width: 23%;
+  height: 17.75rem;
 }
 
 .funding-thumbnail-head {
@@ -412,7 +438,7 @@ header {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  height: 7rem;
+  height: 33%;
   background-image: linear-gradient(#f42 50%, #eeccc6 50%, #eeccc6 50%, #f2e5e5 50%);
 }
 
@@ -420,8 +446,8 @@ header {
   width: 68.5%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  justify-content: space-around;
+  height: 98%;
 }
 
 .funding-thumbnail-head-img {
@@ -432,7 +458,8 @@ header {
   color: white;
   font-size: 1.286rem;
   font-weight: 700;
-  margin: 1em 0;
+  line-height: 1.25;
+  font-family: Lbearation Sans, sans-serif;
 }
 
 .funding-thumbnail-price {
@@ -442,20 +469,21 @@ header {
 
 .funding-thumbnail-source {
   opacity: 0.5;
-  font-size: 0.7rem;
+  font-size: 0.786rem;
+  line-height: 1.5em;
+  font-weight: 500;
+  font-family: Shentox sans, sans-serif;
 }
 
 .funding-thumbnail-middle {
   padding: 1em 1em;
   border-bottom: solid 0.5px #f7c4ab;
   background-image: linear-gradient(#fff, #f2f2f2);
-}
-
-.funding-thumbnail-middle-p {
-  padding: 0.2em;
-  font-size: 0.7rem;
+  height: 28.87%;
+  font-size: 0.929rem;
   opacity: 0.7;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.692em;
 }
 
 .fa-tag,
@@ -466,10 +494,12 @@ header {
 
 .funding-thumbnail-bottom {
   padding: 1em 1em;
-  font-size: 0.7rem;
-  opacity: 0.9;
-  font-weight: 300;
+  font-size: 0.857rem;
+
+  /*! opacity: 0.9; */
+  font-weight: 400;
   background-image: linear-gradient(#fff, #f2f2f2);
+  line-height: 1.5em;
 }
 
 .funding-thumbnail-bottom-text {
@@ -754,75 +784,13 @@ header {
   color: red;
 }
 
-@media screen and (max-width: 1024) {
-  .main-tiles {
-    width: 96%;
-    min-height: 100vh;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-
-  .main-tiles-first-tile {
-    width: 100%;
-    height: 33%;
-    margin-bottom: 1rem;
-  }
-
-  .main-tiles-second-tile-container {
-    width: 100%;
-    height: 60%;
-  }
-
-  .main-second-tile-top-background {
-    height: 48%;
-    width: 100%;
-  }
-
-  .main-second-tile-bottom-background {
-    height: 48%;
-    width: 100%;
-  }
-
-  .first-tile-gradient-red,
-  .second-tile-gradient,
-  .cover-content-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  .main-tiles-first-cover-logo p {
-    font-size: 1rem;
-    font-weight: 600;
-  }
-
-  .main-tiles-title,
-  .main-tiles-second-title {
-    font-size: 1.4rem;
-    font-weight: 700;
-    line-height: 1.1em;
-    letter-spacing: -0.015;
-  }
-
-  .main-tiles-info,
-  .main-tiles-info a {
-    font-size: 0.8rem;
-    line-height: 1.1em;
-    letter-spacing: normal;
-    font-weight: 400;
-  }
-
-  #hidden-icon {
-    display: flex;
-  }
-}
-
-@media (max-width: 980px) {
+@media (max-width: 1020px) {
   header {
     display: grid;
-    height: 12vh;
+    height: 7rem;
     width: 100%;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 25% 45% 30%;
+    grid-template-rows: 25% 43% 32%;
     grid-template-areas:
       "logo black-nav"
       "logo white-nav"
@@ -830,8 +798,9 @@ header {
   }
 
   .general-container {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
+    padding: 1rem;
   }
 
   .navigation-first {
@@ -871,10 +840,21 @@ header {
     height: 100%;
   }
 
+  .main-tiles {
+    max-height: none;
+    height: 49vh;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
+  .latest-news-item {
+    height: 13.75rem;
+  }
+
   .latest-news-item,
   .latest-deals-thumbnails {
-    width: 31%;
-    margin-bottom: 3%;
+    width: 32.5%;
+    margin-bottom: 3rem;
   }
 
   .funding-header {
@@ -884,6 +864,12 @@ header {
   .funding-navbar {
     display: flex;
     width: 100%;
+    margin: 0.5rem 0;
+    font-size: 1.143rem;
+    line-height: 1.125em;
+    letter-spacing: normal;
+    font-weight: 400;
+    font-family: Liberation Sans, sans-serif;
   }
 
   .funding-navbar-a {
@@ -894,11 +880,19 @@ header {
     padding-left: 0;
   }
 
+  /* .funding-thumbnail-container :nth-last-child(1) {
+    display: none;
+  } */
+
+  .fund-hide {
+    display: none;
+  }
+
   .funding-thumbnail,
   .rubric-thumbnail {
-    width: 48%;
-    margin-right: 1%;
-    margin-top: 2%;
+    width: 32%;
+    margin-top: 1rem;
+    height: 17.75rem;
   }
 
   .latest-deals-thumbnails-img-text {
