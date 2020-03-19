@@ -93,8 +93,8 @@ header {
   font-size: 0.8rem;
   line-height: 2.462em;
   font-weight: 500;
-  color: hsla(0,0%,100%,.6);
-  font-family: Liberation Sans;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: Liberation, sans-serif;
 }
 
 .navigation-logo {
@@ -167,6 +167,7 @@ header {
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 400;
+
   /*! width: 81%; */
   padding-left: 10em;
 }
@@ -199,6 +200,7 @@ header {
   position: relative;
   z-index: -1;
   background-repeat: no-repeat;
+
   /*! object-fit: fill; */
   background-position: top;
 }
@@ -412,7 +414,6 @@ header {
 
 .funding-navbar-a {
   color: #f42;
-  /*! font-size: 0.9rem; */
   border-right: solid 1px #f42;
   padding: 0 0.6em;
 }
@@ -458,8 +459,6 @@ header {
   color: white;
   font-size: 1.286rem;
   font-weight: 700;
-
-  /*! margin: 1em 0; */
   line-height: 1.25;
   font-family: Lbearation Sans, sans-serif;
 }
@@ -482,14 +481,10 @@ header {
   border-bottom: solid 0.5px #f7c4ab;
   background-image: linear-gradient(#fff, #f2f2f2);
   height: 28.87%;
-  /*! padding: 0.2em; */
   font-size: 0.929rem;
   opacity: 0.7;
   font-weight: 400;
   line-height: 1.692em;
-}
-
-.funding-thumbnail-middle-p {
 }
 
 .fa-tag,
@@ -501,6 +496,7 @@ header {
 .funding-thumbnail-bottom {
   padding: 1em 1em;
   font-size: 0.857rem;
+
   /*! opacity: 0.9; */
   font-weight: 400;
   background-image: linear-gradient(#fff, #f2f2f2);
@@ -890,7 +886,7 @@ header {
   .funding-navbar-a {
     padding: 0 0.6em;
   }
-  
+
   .funding-navbar :nth-child(1) {
     padding-left: 0;
   }
@@ -998,6 +994,7 @@ header {
   .main-tiles-first-tile {
     width: 100%;
     height: 33vh;
+
     /* margin-bottom: 1rem; */
   }
 
@@ -1130,9 +1127,6 @@ header {
     width: 5.5rem;
     margin-top: auto;
     margin-bottom: auto;
-  }
-
-  .funding-thumbnail-head-right-bottom {
   }
 
   .funding-thumbnail-middle-p {
