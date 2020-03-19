@@ -8,6 +8,7 @@ html {
   padding: 0;
   margin: 0;
   font-size: 14px;
+  min-width: 520px;
 }
 
 body {
@@ -145,6 +146,10 @@ header {
   font-weight: 900;
 }
 
+.fa-search {
+  transform: rotate(-270deg);
+}
+
 #hidden-icon {
   display: none;
 }
@@ -195,7 +200,6 @@ header {
   z-index: -1;
   background-repeat: no-repeat;
   /*! object-fit: fill; */
-  background-size: 300% auto;
   background-position: top;
 }
 
@@ -212,7 +216,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2em 4em;
+  padding: 1em 2em;
   height: 100%;
   width: 100%;
 }
@@ -289,7 +293,7 @@ header {
   z-index: -1;
   position: relative;
   background-repeat: no-repeat;
-  background-size: 288% auto;
+  background-size: 100% auto;
   object-fit: cover;
   display: block;
   background-position: center;
@@ -311,10 +315,10 @@ header {
   z-index: -1;
   position: relative;
   background-repeat: no-repeat;
-  background-size: 287% auto;
+  background-size: 100% auto;
   object-fit: cover;
   display: block;
-  background-position: left;
+  background-position: unset;
 }
 
 /* styling the latest news */
@@ -850,9 +854,17 @@ header {
     padding-right: 0.7rem;
   }
 
-   .latest-news-item {
-     height: 13.75rem;
-   }
+  .main-second-tile-top-background {
+    background-size: 134%;
+  }
+
+  .main-second-tile-bottom-background {
+    background-size: 150%;
+  }
+
+  .latest-news-item {
+    height: 13.75rem;
+  }
 
   .latest-news-item,
   .latest-deals-thumbnails {
@@ -922,10 +934,11 @@ header {
     height: 12vh;
     width: 100%;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 70% 30%;
+    grid-template-rows: 45% 55%;
     grid-template-areas:
       "logo white-nav"
       "yellow-nav yellow-nav";
+    min-height: 6rem;
   }
 
   .white-nav {
@@ -943,6 +956,7 @@ header {
     justify-content: center;
     height: 100%;
     width: 100%;
+    min-width: 6rem;
   }
 
   .top-nav-tnw-logo {
@@ -950,17 +964,23 @@ header {
   }
 
   .navigation-second-icons {
-    width: 25%;
+    width: 15%;
   }
 
   .navigation-third {
     grid-area: yellow-nav;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation-third-anchor {
+    padding-left: 0;
   }
 
   .fa-bars {
-    color: brown;
+    color: #f42;
   }
 
   /* the main titles section */
@@ -968,16 +988,17 @@ header {
   .main-tiles {
     display: flex;
     flex-direction: column;
-    width: 96%;
+    width: 98%;
     min-height: 100vh;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 0;
   }
 
   .main-tiles-first-tile {
     width: 100%;
-    height: 33%;
-    margin-bottom: 1rem;
+    height: 33vh;
+    /* margin-bottom: 1rem; */
   }
 
   .first-tile-date {
@@ -986,16 +1007,16 @@ header {
 
   .main-tiles-second-tile-container {
     width: 100%;
-    height: 60%;
+    height: 66vh;
   }
 
   .main-second-tile-top-background {
-    height: 48%;
+    height: 49%;
     width: 100%;
   }
 
   .main-second-tile-bottom-background {
-    height: 48%;
+    height: 49%;
     width: 100%;
   }
 
@@ -1036,8 +1057,8 @@ header {
   .latest-deals-thumbnails {
     width: 100%;
     height: auto;
-    padding: 1em 0;
     display: flex;
+    margin-bottom: 1rem;
   }
 
   .latest-news-items-container {
@@ -1056,15 +1077,15 @@ header {
   .latest-news-item-img,
   .latest-deals-background {
     object-fit: cover;
-    width: 7rem;
-    height: 6rem;
+    width: 5.3rem;
+    height: 5.3rem;
     margin-right: 1.5em;
   }
 
   .latest-news-item-h3-a {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 1.286em;
   }
 
   .latest-news-item-h4-a {
@@ -1106,13 +1127,12 @@ header {
   }
 
   .funding-thumbnail-head-img {
-    width: 16%;
+    width: 5.5rem;
     margin-top: auto;
     margin-bottom: auto;
   }
 
   .funding-thumbnail-head-right-bottom {
-    margin-bottom: 0.8em;
   }
 
   .funding-thumbnail-middle-p {
@@ -1174,6 +1194,7 @@ header {
 
   .latest-deals-title h3 {
     width: 25%;
+    text-align: end;
   }
 
   .latest-deals-thumbnails-h3 {
