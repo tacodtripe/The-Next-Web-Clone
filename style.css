@@ -8,7 +8,6 @@ html {
   padding: 0;
   margin: 0;
   font-size: 14px;
-  min-width: 520px;
 }
 
 body {
@@ -19,8 +18,6 @@ body {
 
 main {
   width: 100%;
-
-  /*! margin-top: 0.5rem; */
 }
 
 footer {
@@ -97,6 +94,12 @@ header {
   font-family: Liberation, sans-serif;
 }
 
+.navigation-first a:hover,
+.navigation-first a:focus {
+  color: white;
+  transition: 0.5s;
+}
+
 .navigation-logo {
   height: 0%;
   width: 0%;
@@ -123,6 +126,12 @@ header {
   padding-left: 1rem;
   line-height: 1em;
   font-family: Shentox, sans-serif;
+}
+
+.nav-second-anchor:hover,
+.nav-second-anchor:focus {
+  color: black;
+  transition: 0.5s;
 }
 
 .navigation-second-icons {
@@ -348,6 +357,12 @@ header {
   text-decoration: none;
 }
 
+.section-title-a:hover,
+.section-title-a:focus {
+  color: black;
+  transition: 0.5s;
+}
+
 .latest-news-items-container,
 .latest-deals-thumbnails-container {
   width: 100%;
@@ -379,8 +394,6 @@ header {
 
 .latest-news-item-h3-a {
   color: #000;
-
-  /*! font-size: 0.8rem; */
 }
 
 .latest-news-item-h4 {
@@ -393,12 +406,12 @@ header {
 
 .latest-news-item-h4-a {
   color: rgb(170, 170, 170);
-
-  /*! font-size: 0.6rem; */
 }
 
 .latest-news-item-h3-a:hover,
-.latest-news-item-h3-a:focus {
+.latest-news-item-h3-a:focus,
+.latest-deals-thumbnails-h3:hover,
+.latest-deals-thumbnails-h3:focus {
   color: #f42;
   text-decoration: underline;
 }
@@ -416,6 +429,12 @@ header {
   color: #f42;
   border-right: solid 1px #f42;
   padding: 0 0.6em;
+}
+
+.funding-navbar-a:hover,
+.funding-navbar-a:focus {
+  color:black;
+  transition: 0.5s;
 }
 
 .last-nav-item {
@@ -496,8 +515,6 @@ header {
 .funding-thumbnail-bottom {
   padding: 1em 1em;
   font-size: 0.857rem;
-
-  /*! opacity: 0.9; */
   font-weight: 400;
   background-image: linear-gradient(#fff, #f2f2f2);
   line-height: 1.5em;
@@ -916,6 +933,11 @@ header {
 }
 
 @media (max-width: 774px) {
+
+  html {
+    overflow-x: hidden;
+  }
+
   footer {
     height: 50vh;
   }
@@ -1064,6 +1086,7 @@ header {
 
   .section-title {
     width: 100%;
+    font-size: 1.9rem;
   }
 
   .latest-news-item-text-container {
@@ -1187,7 +1210,7 @@ header {
   }
 
   .latest-deals-title h3 {
-    width: 25%;
+    width: 65%;
     text-align: end;
   }
 
