@@ -24,7 +24,7 @@ firefox index.html
 
 ## Demo
 
-![live version](https://raw.githack.com/tacodtripe/The-Next-Web-Clone/master/index.html)
+[live version](https://raw.githack.com/tacodtripe/The-Next-Web-Clone/master/index.html)
 
 
 ## Authors
