@@ -94,12 +94,6 @@ header {
   font-family: Liberation, sans-serif;
 }
 
-.navigation-first a:hover,
-.navigation-first a:focus {
-  color: white;
-  transition: 0.5s;
-}
-
 .navigation-logo {
   height: 0%;
   width: 0%;
@@ -126,12 +120,6 @@ header {
   padding-left: 1rem;
   line-height: 1em;
   font-family: Shentox, sans-serif;
-}
-
-.nav-second-anchor:hover,
-.nav-second-anchor:focus {
-  color: black;
-  transition: 0.5s;
 }
 
 .navigation-second-icons {
@@ -357,12 +345,6 @@ header {
   text-decoration: none;
 }
 
-.section-title-a:hover,
-.section-title-a:focus {
-  color: black;
-  transition: 0.5s;
-}
-
 .latest-news-items-container,
 .latest-deals-thumbnails-container {
   width: 100%;
@@ -408,14 +390,6 @@ header {
   color: rgb(170, 170, 170);
 }
 
-.latest-news-item-h3-a:hover,
-.latest-news-item-h3-a:focus,
-.latest-deals-thumbnails-h3:hover,
-.latest-deals-thumbnails-h3:focus {
-  color: #f42;
-  text-decoration: underline;
-}
-
 .funding-header,
 .latest-deals-title {
   width: 100%;
@@ -429,12 +403,6 @@ header {
   color: #f42;
   border-right: solid 1px #f42;
   padding: 0 0.6em;
-}
-
-.funding-navbar-a:hover,
-.funding-navbar-a:focus {
-  color:black;
-  transition: 0.5s;
 }
 
 .last-nav-item {
@@ -665,12 +633,6 @@ header {
   color: #aaa;
 }
 
-.rubric-bottom-list:hover,
-.rubric-bottom-list:focus {
-  color: black;
-  font-weight: 500;
-}
-
 /* ----styling latest deals--- */
 
 .latest-deals-thumbnails-container {
@@ -764,17 +726,6 @@ header {
   margin: 0 0.5em;
 }
 
-.footer-bottom-nav-icon-container li:hover,
-.footer-bottom-nav-icon-container li:focus {
-  border: solid 0.5px gray;
-  background-color: black;
-}
-
-.footer-bottom-nav-link:hover,
-.footer-bottom-nav-link:focus {
-  color: lightgray;
-}
-
 .foot-note {
   background-color: black;
   height: 35%;
@@ -802,6 +753,55 @@ header {
 
 #heart-icon {
   color: red;
+}
+
+.navigation-first a:hover,
+.navigation-first a:focus {
+  color: white;
+  transition: 0.5s;
+}
+
+.nav-second-anchor:hover,
+.nav-second-anchor:focus {
+  color: black;
+  transition: 0.5s;
+}
+
+.section-title-a:hover,
+.section-title-a:focus {
+  color: black;
+  transition: 0.5s;
+}
+
+.latest-news-item-h3-a:hover,
+.latest-news-item-h3-a:focus,
+.latest-deals-thumbnails-h3:hover,
+.latest-deals-thumbnails-h3:focus {
+  color: #f42;
+  text-decoration: underline;
+}
+
+.funding-navbar-a:hover,
+.funding-navbar-a:focus {
+  color: black;
+  transition: 0.5s;
+}
+
+.rubric-bottom-list:hover,
+.rubric-bottom-list:focus {
+  color: black;
+  font-weight: 500;
+}
+
+.footer-bottom-nav-icon-container li:hover,
+.footer-bottom-nav-icon-container li:focus {
+  border: solid 0.5px gray;
+  background-color: black;
+}
+
+.footer-bottom-nav-link:hover,
+.footer-bottom-nav-link:focus {
+  color: lightgray;
 }
 
 @media (max-width: 1020px) {
@@ -933,7 +933,6 @@ header {
 }
 
 @media (max-width: 774px) {
-
   html {
     overflow-x: hidden;
   }
